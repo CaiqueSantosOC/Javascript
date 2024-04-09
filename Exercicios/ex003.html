@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em Video JS</title>
+    <style> 
+        body {
+            background-color: rgb(245, 247, 150);
+            color: black; /*COMENTÁRIO EM CSS*/
+            font: normal 16pt Arial;
+        }
+        h1 { color: rgb(0, 0, 0);}
+        p { color: rgb(84, 8, 114);}
+    </style>
+</head>
+<body>
+    <h1>Tratamento de tipos de dados em JS.</h1> <!--COMENTÁRIO EM HTML-->
+    <hr>
+    <p>Nesta aula estou aplicando atribuição a variaveis e tambem aprendendo a tratar os dados em JS. Pra cima!!! &#X1f596</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número:')) //string
+        var n2 = Number(window.prompt('Digite o segundo número:')) //string
+        //var n1 = window.prompt('Digite um numero:') >> conversão de tipo de dados.
+        //var n1 = window.prompt('Digite o segundo numero:')>> conversão de tipo de dados.
+        //Number = utilizado para conversão de tipos de dados. number and string.
+        var soma = n1 + n2
+        window.alert(`O resultado da soma de ${n1} e ${n2} é: ${soma}.`) 
+        //usar crase `` para concatenação de strings e textos em javascript.
+        // (number + number) + = adição.
+        // (string + string) + = concatenação.
+    </script>
+</body>
+</html>

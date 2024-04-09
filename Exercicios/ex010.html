@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Eventos</title>
+    <style>
+        body{
+            font-size: normal 16pt arial;
+        }
+        div#aqui{
+            font: normal 20pt arial;
+            color: white;
+            background-color: greenyellow;
+            height: 50pt;
+            width: 120pt;
+            line-height: 50pt;
+            text-align: center;
+        }
+        div#here{
+            font: normal 20pt arial;
+            color: white;
+            background-color: aquamarine;
+            height: 50pt;
+            width: 120pt;
+            line-height: 50pt;
+            text-align: center;
+            margin-top: 10pt;
+        }
+    </style>
+</head>
+<body>
+    <div id="aqui" >
+        Clique aqui..
+    </div>
+    <div id="here">
+        Click Here..
+    </div>
+    <script>
+    //sequencia lógica para criação de eventos dom e funções...
+    // 1-criar doc HTML + titulo.
+    // 2-criar as DIV de acordo com a nescessidade do projeto.
+    // 3-criar as Var variaveis e fazer o LINK com as DIV.
+    // 4-editar STYLE das div de acordo com projeto.
+    // 5-criar FUNCTION de acordo com projeto CLICK,MOUSEENTER,MOUSEOUT.
+    // 6-adicionar eventos fazendo LINk das variaveis + funções 
+        var a= window.document.getElementById('aqui')
+        var b= window.document.getElementById('here')
+        a.addEventListener("click", clicar)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+        b.addEventListener('click', clicar1)
+        b.addEventListener('mouseenter',entrou1)
+        b.addEventListener('mouseout', saiu1)
+
+        function clicar(){
+            a.innerText ='Clicou!'
+            a.style.background = 'red'
+        } 
+        function entrou(){
+            a.innerText = 'Entrou!'
+            a.style.background = 'green'
+        }
+        function saiu(){
+            a.innerText = 'Saiu!'
+            a.style.background = 'blue'
+        }
+        function clicar1(){
+            b.innerText = 'Clicou!'
+            b.style.background = 'red'
+        }
+        function entrou1(){
+            b.innerText = 'Entrou!'
+            b.style.background = 'green'
+        }
+        function saiu1(){
+            b.innerText = 'Saiu!'
+            b.style.background = 'blue'
+        }
+    </script>
+    
+</body>
+</html>

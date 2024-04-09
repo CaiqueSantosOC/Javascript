@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando eventos em JS</title>
+    <style>
+        body{
+            color: darkblue;
+            font: normal 40pt arial;
+            background-color: rgb(8, 31, 23);
+        }
+        div#area{
+            color: black;
+            width: 300pt;
+            height: 300pt;
+            line-height:250pt;
+            text-align: center;
+            background-color: rgb(151, 252, 51);
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        INTERAJA..
+    </div>
+<script>
+    var a = window.document.getElementById('area')
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair)
+</script>
+    
+</body>
+</html>

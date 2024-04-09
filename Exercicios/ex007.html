@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+        body{
+            color: rgb(7, 7, 26);
+            font: normal 14pt arial;
+            background-color: rgb(232, 248, 209);
+        }
+        div#area{
+            color: yellow;
+            font: normal 25pt arial;
+            background-color: black;
+            width: 160pt;
+            height: 100pt;
+            line-height: 85pt;
+            text-align: center;
+        }
+        div#area1{
+            color: yellow;
+            font:normal 25pt arial;
+            background-color: darkblue;
+            width: 160pt;
+            height: 100pt;
+            line-height: 85pt;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Eu vou aprender essa bagaça.</h1>
+    <hr>
+    <div id= area>
+        Interaja..
+    </div>
+    <div id="area1">
+        Interaja1..
+    </div>
+    <script>// declarando variaveis p/ links com eventos DOM e tag DIV.
+        var a = window.document.getElementById("area")
+        var b = window.document.getElementById("area1")
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+
+        b.addEventListener('click', clicar1)
+        b.addEventListener('mouseenter', entrou1)
+        b.addEventListener('mouseout', saiu1)
+        
+        function clicar(){
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrou(){
+            a.innerText = 'Entrou!'
+            a.style.background = 'blue'
+        }
+        function saiu(){
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+        function clicar1(){
+            b.innerText = 'Clicou!'
+            b.style.background = 'red'
+        }
+        function entrou1(){
+            b.innerText = 'Entrou!'
+            b.style.background = 'blue'
+        }
+        function saiu1(){
+            b.innerText = 'Saiu!'
+            b.style.background = 'green'
+        }
+    </script>
+    
+</body>
+</html>
