@@ -1,2 +1,2 @@
 # Javascript
- curso de Javascript do curso em video
+ Meu repositório de JavaScript, contendo exercicios e projetos em desenvolvimento.
