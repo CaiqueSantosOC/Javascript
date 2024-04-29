@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hora do Dia</title>
+</head>
+<body>
+    <h1>Exemplo de Hora do Dia</h1>
+    <p id="hora"></p>
+    <img id="imagemHora" src="" alt="Imagem de acordo com a hora do dia">
+    
+    <script>
+        function atualizarHora() {
+            var data = new Date();
+            var hora = data.getHours();
+            var imagem = document.getElementById('imagemHora');
+
+            if (hora >= 6 && hora < 12) {
+                document.getElementById('hora').innerText = "Bom dia!";
+                imagem.src = "manha.jpg";
+            } else if (hora >= 12 && hora < 18) {
+                document.getElementById('hora').innerText = "Boa tarde!";
+                imagem.src = "tarde.jpg";
+            } else {
+                document.getElementById('hora').innerText = "Boa noite!";
+                imagem.src = "noite.jpg";
+            }
+        }
+
+        // Chama a função uma vez para exibir a hora inicialmente
+        atualizarHora();
+
+        // Atualiza a hora a cada minuto
+        setInterval(atualizarHora, 60000); // 60000 milissegundos = 1 minuto
+    </script>
+</body>
+</html>
