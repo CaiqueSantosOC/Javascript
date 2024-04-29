@@ -7,17 +7,39 @@
     <style>
         h1 {
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt;
+        }
+        div.ajuste {
+            margin: auto;
+            text-align: center;
+            width: 400px;
+            height: 200px;
+            background-color: rgba(51, 246, 16, 0.649);
+            align-content: center;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        input {
+            width: 80px;
+            height: 20px;
+            border-radius: 5px;
         }
 
     </style>
 </head>
 <body>
-    <h1>APLICANDO CONDIÇÕES SIMPLES EM JAVASCRIPT</h1>
-    <hr>
-    <h2>Sistema de Multas</h2>
-    Velocidade do carro: <input type="number" name="txtvel" id="txtvel">
-    <input type="button" value="Verificar" onclick="calcular()">
-    <div id="radar">Resultado final...</div>
+        <h1>APLICANDO CONDIÇÕES SIMPLES EM JAVASCRIPT</h1>
+        <hr>
+    <div class="ajuste">
+        <h2>Sistema de Multas</h2>
+        Velocidade do carro: <input type="number" name="txtvel" id="txtvel">
+        <input type="button" value="Verificar" onclick="calcular()">
+        <div id="radar">Resultado final...</div>
+    </div>
 
 <script>
     function calcular() {
