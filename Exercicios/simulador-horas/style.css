@@ -1,0 +1,30 @@
+body {
+    background-color: rgba(19, 19, 230, 0.712);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;   
+}
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 01px 01px 01px black;
+}
+div {
+    background-color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    border: 01px 02px 03px black;
+    border-radius: 05px;
+    box-shadow: 01px 01px 01px 01px black ;
+    margin: auto;
+    margin-top: 10px;
+    width: 500px;
+    height: 100px;
+}
+footer {
+    color: whitesmoke;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
