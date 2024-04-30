@@ -12,13 +12,24 @@
         <h1>SIMULADOR DE IDADE:</h1>
     </header>
     <section>
-        <div>Titulo</div>
-        <div>Dados coletados: masculino/feminino</div>
-        <div>A mensagem final apareçe aqui...</div>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>    
+            <p>Sexo: 
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>       
+        <div id="res">A mensagem final apareçe aqui...</div>
     </section>
     <footer>
-        <p>©️ CaiqueSantos 2024</p>
+        <p>© CaiqueSantos 2024</p>
     </footer>
-    <script src="script"></script>
+    <script src="script.js"></script>
 </body>
 </html>
