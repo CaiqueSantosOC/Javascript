@@ -8,21 +8,41 @@ h1 {
     color: whitesmoke;
     text-shadow: 01px 01px 01px black;
 }
-div {
+section {
     background-color: whitesmoke;
     padding: 10px;
     text-align: center;
-    border: 01px 02px 03px black;
+    border: 02px 02px 10px black;
     border-radius: 05px;
-    box-shadow: 01px 01px 01px 01px black ;
+    box-shadow: 03px 05px 12px rgba(0, 0, 0, 0.678) ;
     margin: auto;
     margin-top: 10px;
-    width: 500px;
-    height: 100px;
+    max-width: 500px;
+    min-height: 350px;
 }
+#msg {
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+#imagem {
+    max-width: 250px;
+    max-height: 250px;
+    
+}
+#resposta {
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
 footer {
     color: whitesmoke;
     text-align: center;
+    font-size: 12pt;
+    text-shadow: 01px 01px 01px rgba(0, 0, 0, 0.671);
 }
 a {
     text-decoration: none;
