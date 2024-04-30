@@ -4,7 +4,9 @@ function carregar() {
     var resposta = document.getElementById('resposta')
     var data = new Date()
     var hora = data.getHours()
-    msg.innerHTML= `Agora são ${hora} horas.`;
+    var min = data.getMinutes()
+    msg.innerHTML= `Agora são ${hora} horas e ${min} minutos.`;
+    
     if (hora >= 0 && hora < 12) {
         resposta.innerHTML= 'Bom Dia!';
         foto.src = 'manha.png';

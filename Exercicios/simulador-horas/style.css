@@ -44,7 +44,15 @@ footer {
     font-size: 12pt;
     text-shadow: 01px 01px 01px rgba(0, 0, 0, 0.671);
 }
+footer img {
+    width: 30px;
+    height: 30px;
+    padding: 05px;
+    display: inline-flex;
+    justify-content: center;
+}
 a {
     text-decoration: none;
     color: whitesmoke;
+    
 }
