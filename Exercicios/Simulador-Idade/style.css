@@ -29,6 +29,7 @@ footer {
     font-size: 12pt;
     font-weight: bolder;
 }
+   
 footer img {
     width: 30px;
     height: 30px;
@@ -36,4 +37,5 @@ footer img {
 }
 div#res {
     text-align: center;
+    
 }
