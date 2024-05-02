@@ -6,7 +6,7 @@ function verificar(){
     if (fano.value.length == 0 || fano.value > ano) {
         window.alert(' [ERRO] Por favor, verifique os dados e tente novamente!')
     } 
-    else {
+    else {fano.value
         
     }
     
