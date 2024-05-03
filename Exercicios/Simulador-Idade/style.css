@@ -19,8 +19,9 @@ section {
     box-shadow: 5px 8px 8px #0000008f;
     max-width: 500px;
     min-width: 300px;
-    max-height: 400px;
-    min-height: 300px;
+    max-height: 420px;
+    min-height: 400px;
+
     margin: auto;
 }
 footer {
@@ -36,6 +37,12 @@ footer img {
     padding: 05px;
 }
 div#res {
-    text-align: center;
+    text-align: center;    
+}
+#foto {
+    width: 50%;
+    height: 30%;
+    padding: 10px;
+    
     
 }
