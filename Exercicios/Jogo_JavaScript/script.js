@@ -24,6 +24,8 @@ const loop = setInterval(() => {
 
         sasuke.style.animation = 'none'
         sasuke.style.left = `${sasukePosition}px`
+
+        sasuke.src ('')
     }
 
 }, 10) 

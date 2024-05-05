@@ -19,7 +19,7 @@
     width: 80px;
     position: absolute;
     bottom: 0;
-    animation: sharingan_move 1.5s infinite linear;
+    animation: sharingan_move 2s infinite linear;
 }
 
 .sasuke {
