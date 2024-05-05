@@ -1,0 +1,61 @@
+/*Reset básico no CSS para desenvolver o jogo. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game_board {
+    width: 80%;
+    height: 500px;
+    border: 01px solid black;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.sharingan {
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    animation: sharingan_move 2s infinite linear;
+}
+
+.sasuke {
+    width: 180px;
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(-1);    
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+@keyframes sharingan_move {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 140px;
+    }
+    50% {
+        bottom: 140px;
+    }
+    60% {
+        bottom: 140px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
