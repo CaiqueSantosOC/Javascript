@@ -13,6 +13,7 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background-image: linear-gradient( #46a0fa, white);
 }
 
 .sharingan {
@@ -20,6 +21,7 @@
     position: absolute;
     bottom: 0;
     animation: sharingan_move 2s infinite linear;
+    
 }
 
 .sasuke {
