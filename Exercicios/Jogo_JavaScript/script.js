@@ -35,3 +35,12 @@ const loop = setInterval(() => {
 }, 10) 
 
 document.addEventListener('keydown', jump)
+
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+      var audio = document.getElementById("meuaudio");
+      audio.play();
+    }, 1000); // Tempo em milissegundos antes de começar a reprodução do áudio (1000ms = 1 segundo)
+  });
+
+
